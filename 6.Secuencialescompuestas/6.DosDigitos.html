@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+var num1,num2, op1, op2;
+
+num1=prompt("Ingese el primer digito","");
+num2=prompt("Ingrese el segundo numero","")
+
+if(num1>num2)
+{
+op1=parseInt(num1)+parseInt(num2);
+   op2=parseInt(num1)-parseInt(num2);
+   document.write("El numero "+num1+" es mayor que "+num2);
+   document.write("<br>La Suma de ambos numeros es "+op1);
+   document.write("<br>La Diferencia de ambos numeros es "+op2);
+}
+else
+{
+   op1=parseInt(num1)*parseInt(num2);
+   op2=parseInt(num1)/parseInt(num2);
+   document.write("El numero "+num1+" no es mayor que "+num2);
+   document.write("<br>El producto de ambos numeros es "+op1);
+   document.write("<br>La Division de ambos numeros es "+op2);
+}
+</script>
+
+</body>
+</html>
+     
