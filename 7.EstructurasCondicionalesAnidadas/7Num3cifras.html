@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Numero de 3 cifras</title>
+</head>
+<body>
+<script type="text/javascript">
+
+var num=prompt("Escriba el número","");
+parseInt(num);
+
+if(num<=9)
+{document.write("el número es de 1 cifra");}
+else if(num>9){
+if(num<=99){document.write("el número es de 2 cifras");}
+else{document.write("El numero tiene 3 cifras");}}
+document.write('<br> <input  type="button" value="Recargar" onclick="document.location.reload();">')
+
+/*var num;
+  num=prompt('Ingrese un número de 1,2 o 3 dígitos','');
+  num=parseInt(num);
+  if (num<10)
+  {
+    document.write('Tiene un dígito');
+  }
+  else
+  {
+    if (num<100)
+    {
+      document.write('Tiene dos dígitos');
+    }
+    else
+    {
+      document.write('Tiene tres dígitos');
+    }
+  }*/
+</script>
+</body>
+</html>	

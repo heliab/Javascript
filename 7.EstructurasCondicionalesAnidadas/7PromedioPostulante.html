@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Promediopostulante</title>
+</head>
+<body>
+<script type="text/javascript">
+var nombre, npreguntas, naciertos, porcentaje;
+
+nombre=prompt("Ingrese el nombre","");
+npreguntas=prompt("Ingrese el numero de preguntas","");
+parseInt(npreguntas);
+naciertos=prompt("Ingrese numero de aciertos",'');
+parseInt(naciertos);
+// Sin validar si el numero de preguntas es igual al numero de aciertos
+//Obtener porcentaje
+porcentaje=(naciertos*100)/npreguntas;
+if(porcentaje>=90)
+{
+	document.write(nombre+" Tiene Nivel Superior");
+} 
+else if(porcentaje>=75)
+{
+	document.write(nombre+"Tiene nivel medio");
+}
+else {
+if(porcentaje>=50)
+{
+	document.write(nombre+"tiene nivel regular");
+}
+else
+{
+document.write(nombre+" est[a fuera de nivel");
+}
+}
+document.write('<br> <input type="button" value="recargar" onclick="document.location.reload();" >')
+</script>
+</body>
+</html>
