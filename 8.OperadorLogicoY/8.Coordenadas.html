@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+var coord1, coord2;
+
+coord1=prompt("Ingrese el valor de x",'');
+coord2=prompt("Ingrese el valor de y",'');
+
+if (parseInt(coord1)>0 && parseInt(coord2)>0)
+	{document.write("El punto está en el cuadrante 1");}
+else if (parseInt(coord1)<0 && parseInt(coord2)>0) {document.write("El punto está en el cuadrante 2");}
+else if (parseInt(coord1)<0 && parseInt(coord2)<0) {document.write("El punto está en el cuadrante 3");}
+else {document.write("El punto está en el cuadrante 4");}
+
+document.write('<input type="button" value="Recargar" onclick="location.reload()">');
+</script>
+</body>
+</html>

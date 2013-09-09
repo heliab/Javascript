@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+
+var operador, sueldo, antiguedad, aumento;
+operador=prompt('Ingrese el nombre del operador','');
+sueldo=prompt("ingrese el monto de suldo","");
+antiguedad=prompt("Ingrese anios de antiguedad","");
+/*Por variables seriria aglo asi*/
+/*aumento=parseInt(sueldo)+(parseInt(sueldo)*0.20);*/
+
+if(sueldo<500 && antiguedad>=10)
+	{document.write("el sueldo a pagar a "+operador+"es "+(parseInt(sueldo)+(parseInt(sueldo)*0.20)));}
+else
+	if (sueldo<500 && antiguedad<10)
+ {document.write("el sueldo a pagar a "+operador+"es "+(parseInt(sueldo)+(parseInt(sueldo)*0.05)));}
+else if (sueldo>=500 )
+ {document.write("el sueldo a pagar a "+operador+"es el mismo");}
+
+
+document.location.reload(30);
+
+</script>
+</body>
+</html>

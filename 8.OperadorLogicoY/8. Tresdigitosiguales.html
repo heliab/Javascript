@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+var num1, num2, num3, operacion;
+
+num1=prompt("Ingrese el primer numero","");
+
+num2=prompt('Ingrese el segundo numero','');
+
+num3=prompt('Ingrese el tercer numero','');
+
+if (num1==num2 && num2==num3)
+ {operacion=(parseInt(num1)+parseInt(num2))*parseInt(num3);
+
+ 	document.write('La suma de los 2 primeros por el tercero es<br>'+operacion);}
+
+ else{document.write("Los numeros no son iguales");
+}
+document.write('<br> <input type="button" value="recargar" onclick="document.location.reload();" >')
+</script>
+</body>
+</html>
