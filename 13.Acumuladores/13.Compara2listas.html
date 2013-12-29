@@ -1,0 +1,50 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+var cont, suma1, dato1;
+cont=1;
+suma1=0;
+
+var  suma2, dato2;
+suma2=0;
+
+alert("Aca estoy "+cont);
+while(cont<=3)
+	{
+		dato1=prompt("Ingrese el valor "+cont+" de la primera lista",'');
+		dato1=parseInt(dato1);
+		suma1=suma1+dato1;
+		cont=cont+1;
+		/*alert("Aca estoy "+cont); si dejo esta alerta se muestra que recorre este while siempre aunque ya este por el segunda*/
+
+	}
+while(cont>=3 && cont<=6)
+	{
+		dato2=prompt("Ingrese el valor "+cont+" perteneciente a la segunda lista",'');
+		dato2=parseInt(dato2);
+		suma2=suma2+dato2;
+		cont=cont+1;
+
+	}
+
+
+	alert("Suma1="+suma1);
+	alert("Suma2="+suma2);
+	if(suma1>suma2)
+		{
+			document.write("La lista 1 es mayor que la lista 2");
+		}
+	else if(suma2==suma1)
+		{
+			document.write("Ambas listas son iguales");
+		}
+	else
+		{
+			document.write("La lista 2 es mayor que la uno");
+		}
+	document.write('<br> <input type=button value="Recargar" onclick="location.reload()">');
+</script>
+</body>
+</html>
