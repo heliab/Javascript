@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+var numper,altura, contA, acumEdad, promedio;
+
+numper=prompt("Ingrese el número de personas",'');
+contA=1;
+acumEdad=0;
+
+while(numper>=contA)
+{
+	altura=prompt("Ingrese la edad de la persona "+contA,'');
+	altura=parseInt(altura);/*1*/
+	acumEdad=acumEdad+altura;
+	contA=contA+1;
+	altura=0;
+}
+
+promedio=acumEdad/numper;/*2*/
+document.write("El promedio de las "+numper+" personas es: <b>"+promedio+"</b>");
+document.write('<br><input type="button" value="Recargar" onclick="location.reload()">');
+/*1--fue necesario convertir a entero la altura para efectuar la operacion en el acumulador acumEdad*/
+/*2--como no se estaba sumando ni realizando nada con numper, no se concatenada con nada y no se tenía que convertir en entero numper*/
+</script>
+
+</body>
+</html>

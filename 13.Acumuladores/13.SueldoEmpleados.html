@@ -1,0 +1,51 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+var numempl, sueldo, contEmp,contSueldoMen,sumSueldo,contSueldoMay;
+
+numempl=5;
+contEmp=1;
+contSueldoMen=0;
+contSueldoMay=0;
+sumSueldo=0;
+
+while(numempl>=contEmp)
+{
+	sueldo=prompt("Escriba el sueldo del empleado "+contEmp,'');
+	sueldo=parseInt(sueldo);
+	if(sueldo<=500 && sueldo>=100)
+		{
+
+			contEmp=contEmp+1;
+			if(sueldo>=100 && sueldo<=300)
+				{
+					contSueldoMen=contSueldoMen+1;
+					sumSueldo=sumSueldo+sueldo;
+					sueldo=0;
+				}
+			else
+				{
+					alert("Voy aqui");
+					contSueldoMay=contSueldoMay+1;
+					sumSueldo=sumSueldo+sueldo;
+					sueldo=0;
+				}
+
+
+		}
+	else
+		{
+			alert("Debe elegir un sueldo entre $100 y $500");
+		}
+}
+alert("Los 5 salarios ha sido procesados");
+document.write("Los empleados que cobran  entre $100 y $300 son: <strong><em><big>"+contSueldoMen+"</big></em></strong><br>");
+document.write("Los empleados que cobran más de $300 son: <strong><em><big>"+contSueldoMay+"</big></em></strong><br>");
+document.write("El total que la empresa gasta en los sueldos del personal es: <strong><big>"+sumSueldo+"<big></strong>");
+</script>
+
+</body>
+</html>
