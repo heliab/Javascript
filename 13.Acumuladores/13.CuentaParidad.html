@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+
+var contWhile,num, contPar, contImpar;
+contWhile=1;
+contPar=0;
+contImpar=0;
+alert("Aca voy");
+while(contWhile<=5)
+	{
+		num=prompt("Ingrese el numero",'');
+		num=parseInt(num);
+		if (num%2==0) {contPar=contPar+1;}
+		else{contImpar=contImpar+1}
+		contWhile=contWhile+1;
+	}
+document.write("La cantidad de numeros pares es: "+contPar);
+document.write("<br>");
+document.write("La cantidad de numero impares es:"+contImpar);
+
+</script>
+</body>
+</html>
