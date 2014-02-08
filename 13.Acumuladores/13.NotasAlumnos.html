@@ -4,30 +4,30 @@
 <body>
 
 <script type="text/javascript">
-var cantA, acumA, acumB, cont1,nota;
+var CantNota, acumA, acumB, cont,nota;
 
 alert("Hola \n hare un recuento de las notas mayores o iguales y menoreas a 7");
-cantA=prompt("Ingresa la cantidad de notas",'')
-cantA=parseInt(cantA);
-cont1=1;
+CantNota=prompt("Ingresa la cantidad de notas",'')
+CantNota=parseInt(CantNota);
+cont=1;
 acumA=0;
 acumB=0;
 
-while(cantA>=cont1){
-	nota=prompt("Escribe la "+cont1+" nota",'');
+while(CantNota>=cont){
+	nota=prompt("Escribe la "+cont+" nota",'');
 	nota=parseInt(nota);
 	if(nota>=7)
 		{
 			acumA=acumA+1;
 			nota=0;
-			cont1=cont1+1;
+			cont=cont+1;
 
 		}
 	else
 		{	
 			acumB=acumB+1;
 			nota=0;
-			cont1=cont1+1;
+			cont=cont+1;
 		}	
 }
 
