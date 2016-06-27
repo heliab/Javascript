@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+	alert("Favor ingrese varios numeros y el 9999 para parar de ingresar");
+	var numIngresado=0, sumNumero=0;
+	var validNumber=true;
+	
+do{
+	numIngresado=prompt("Ingrese el numero: ","");
+	if(numIngresado==9999){
+		validNumber=false;
+		alert("El numero es 9999");
+	}
+	else{numIngresado=parseInt(numIngresado);
+		sumNumero=numIngresado+sumNumero;}
+
+}
+	while(validNumber==true);
+	alert("La suma es "+ sumNumero);
+
+</script>
+</body>
+</html>
